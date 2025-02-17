@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elizabeth Okunbor - Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --color-sage: #CCD5AE;
+            --color-cream: #E9EDC9;
+            --color-vanilla: #FEFAE0;
+            --color-peach: #FAEDCD;
+            --color-brown: #D4A373;
+            --main-text: #333333;
+        }
+
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+            line-height: 1.6;
+            color: var(--main-text);
+            background-color: var(--color-vanilla);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: var(--color-sage);
+            padding: 1rem 2rem;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Shadows Into Light', cursive;
+            font-size: 1.8rem;
+            text-decoration: none;
+            color: var(--main-text);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--main-text);
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+            flex: 1;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .social-icon-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .social-icon {
+            width: 50px;
+            height: 50px;
+            background-color: var(--color-brown);
+            border-radius: 50%;
+            display: inline-block;
+            transition: transform 0.3s ease;
+            text-decoration: none; /* Hide hyperlink text */
+        }
+
+        .social-icon:hover {
+            transform: scale(1.1);
+        }
+
+        .social-icon-container span {
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: var(--color-cream);
+            border-radius: 8px;
+        }
+
+        .contact-form div {
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid var(--color-brown);
+            border-radius: 4px;
+            background-color: white;
+        }
+
+        .contact-form textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        .contact-form button {
+            background-color: var(--color-brown);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #bc8c5f;
+        }
+
+        footer {
+            background-color: var(--color-sage);
+            padding: 1rem;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        @media (max-width: 768px) {
+            .nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact-form {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Elizabeth Okunbor</a>
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Me</h1>
+        <div class="contact-links">
+            <div class="social-icon-container">
+                <a href="https://www.instagram.com/eluze.studio" class="social-icon" aria-label="Instagram">
+                    <span class="sr-only">Instagram</span>
+                </a>
+                <span>Instagram</span>
+            </div>
+            <div class="social-icon-container">
+                <a href="https://www.tiktok.com/@eluze.studio" class="social-icon" aria-label="TikTok">
+                    <span class="sr-only">TikTok</span>
+                </a>
+                <span>TikTok</span>
+            </div>
+            <div class="social-icon-container">
+                <a href="https://www.youtube.com/channel/UCX4Ylz4xH2xdHmT9h0PqflA" class="social-icon" aria-label="YouTube">
+                    <span class="sr-only">YouTube</span>
+                </a>
+                <span>YouTube</span>
+            </div>
+            <div class="social-icon-container">
+                <a href="https://github.com/eluze-studio" class="social-icon" aria-label="GitHub">
+                    <span class="sr-only">GitHub</span>
+                </a>
+                <span>GitHub</span>
+            </div>
+            <div class="social-icon-container">
+                <a href="https://www.linkedin.com/in/eluze-studio" class="social-icon" aria-label="LinkedIn">
+                    <span class="sr-only">LinkedIn</span>
+                </a>
+                <span>LinkedIn</span>
+            </div>
+        </div>
+        <form class="contact-form">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Elizabeth Okunbor. All rights reserved.</p>
+    </footer>
+</body>
+</html>

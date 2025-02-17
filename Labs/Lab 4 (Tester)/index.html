@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elizabeth Okunbor - About Me</title>
+    <title>Elizabeth Okunbor - Home</title>
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
     <style>
         * {
@@ -29,11 +29,14 @@
             min-height: 100vh;
             display: flex;
             flex-direction: column;
+            justify-content: center; /* Vertically center content */
+            align-items: center; /* Horizontally center content */
         }
 
         header {
             background-color: var(--color-sage);
             padding: 1rem 2rem;
+            width: 100%;
         }
 
         nav {
@@ -66,19 +69,25 @@
             max-width: 1200px;
             margin: 2rem auto;
             padding: 0 2rem;
-            flex: 1;
+            text-align: center; /* Center text */
         }
 
-        .about-content {
-            margin-top: 2rem;
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin: 2rem 0;
         }
 
-        .about-content img {
-            float: left;
-            margin: 0 2rem 1rem 0;
-            border-radius: 50%;
-            width: 300px;
-            height: 300px;
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
         }
 
         footer {
@@ -102,13 +111,12 @@
     </header>
 
     <main>
-        <h1>About Me</h1>
-        <div class="about-content">
-            <img src="/api/placeholder/300/300" alt="Profile Picture">
-            <p>Hello! I'm Elizabeth Okunbor, a passionate developer and designer...</p>
-            <p>My journey in tech began when...</p>
-            <p>When I'm not coding, you can find me...</p>
-        </div>
+        <h1>Welcome to My Portfolio</h1>
+        <section class="gallery">
+            <img src="/api/placeholder/400/300" alt="Featured Project 1 - Headshot in Creative Workspace">
+            <img src="/api/placeholder/400/300" alt="Featured Project 2 - Headshot in Nature">
+            <img src="/api/placeholder/400/300" alt="Featured Project 3 - Headshot in Professional Setting">
+        </section>
     </main>
 
     <footer>
