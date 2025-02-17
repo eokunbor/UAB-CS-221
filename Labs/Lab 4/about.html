@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elizabeth Okunbor - About Me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --color-sage: #CCD5AE;
+            --color-cream: #E9EDC9;
+            --color-vanilla: #FEFAE0;
+            --color-peach: #FAEDCD;
+            --color-brown: #D4A373;
+            --main-text: #333333;
+        }
+
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+            line-height: 1.6;
+            color: var(--main-text);
+            background-color: var(--color-vanilla);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: var(--color-sage);
+            padding: 1rem 2rem;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Shadows Into Light', cursive;
+            font-size: 1.8rem;
+            text-decoration: none;
+            color: var(--main-text);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--main-text);
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+            flex: 1;
+        }
+
+        .about-content {
+            margin-top: 2rem;
+        }
+
+        .about-content img {
+            float: left;
+            margin: 0 2rem 1rem 0;
+            border-radius: 50%;
+            width: 300px;
+            height: 300px;
+        }
+
+        footer {
+            background-color: var(--color-sage);
+            padding: 1rem;
+            text-align: center;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Elizabeth Okunbor</a>
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>About Me</h1>
+        <div class="about-content">
+            <img src="/api/placeholder/300/300" alt="Profile Picture">
+            <p>Hello! I'm Elizabeth Okunbor, a passionate developer and designer...</p>
+            <p>My journey in tech began when...</p>
+            <p>When I'm not coding, you can find me...</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Elizabeth Okunbor. All rights reserved.</p>
+    </footer>
+</body>
+</html>
