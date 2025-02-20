@@ -99,3 +99,5 @@ table {
     border-collapse: collapse;
     width: auto;
     max-wid
+    th: 1px solid #8C3826;
+}
