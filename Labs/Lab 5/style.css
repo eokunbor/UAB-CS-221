@@ -1,0 +1,102 @@
+/* General Styles */
+body {
+    background-color: #FCEBB6;
+    color: #221811;
+    font-family: Tahoma, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Wrapper for centering content */
+#wrapper {
+    width: 80%;
+    background-color: #FEFAEB;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures wrapper takes full height */
+}
+
+/* Header Styles */
+header {
+    color: #8C3826;
+    background-color: #D2B48C;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Headings */
+h1 {
+    color: #8C3826;
+    line-height: 200%;
+}
+
+h2 {
+    color: #8C3826;
+    text-align: center;
+}
+h3 {
+    color: #0b0b0b;
+    text-align: center;
+}
+
+
+p {
+    text-align: center;
+    margin: 10px 0;
+}
+
+
+nav {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #8C3826;
+    margin: 0 15px;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #5A1E10;
+}
+
+
+main {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+footer {
+    background-color: #D2B48C;
+    font-size: 0.75em;
+    font-style: italic;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto; 
+}
+
+.content-container {
+    display: flex;
+    align-items: center;  
+    gap: 30px; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+}
+
+
+.profile-image {
+    width: 250px; 
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+table {
+    border-collapse: collapse;
+    width: auto;
+    max-wid
