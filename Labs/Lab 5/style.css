@@ -1,23 +1,22 @@
-/* General Styles */
+
 body {
     background-color: #FCEBB6;
-    color: #221811;
+    color: #432510;
     font-family: Tahoma, Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* Wrapper for centering content */
 #wrapper {
     width: 80%;
     background-color: #FEFAEB;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensures wrapper takes full height */
+    min-height: 100vh; 
 }
 
-/* Header Styles */
+
 header {
     color: #8C3826;
     background-color: #D2B48C;
@@ -25,7 +24,7 @@ header {
     padding: 20px 0;
 }
 
-/* Headings */
+
 h1 {
     color: #8C3826;
     line-height: 200%;
@@ -36,7 +35,7 @@ h2 {
     text-align: center;
 }
 h3 {
-    color: #0b0b0b;
+    color: #4c2a1d;
     text-align: center;
 }
 
