@@ -1,0 +1,95 @@
+body {
+    background: linear-gradient(#fafaf7,#4cb613, #0f5526,  #042910);
+    background-size: cover;
+    background-attachment: fixed; 
+    margin: 0;
+    padding: 0;
+    color: #5e6060;
+    text-align: center;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    text-align: center;
+    width:100%;
+    color: white;
+    font-size: 1.5em;
+    background-color: #000000;
+    padding: 15px; 
+    border-bottom: 2px solid #144f32ff;
+    z-index: 1000;
+}
+
+#productboard {
+    display: grid;
+    flex-grow: 1;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10.2px;
+    padding: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.products{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:normal;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.products button {
+    margin-top: auto; 
+    background-color: #13a84a;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.products button:hover {
+    background-color: #14ca57;
+}
+
+.products img {
+    max-width: 500px;
+    align-items: center;
+    height: auto;
+    max-height: 200px; /* Ensures images are consistent */
+    object-fit: cover;
+}
+
+h1 {
+    min-height: 50px; 
+    color: #000000;
+    line-height: 200%;
+}
+
+.products h4{
+    margin-top: auto;
+    color: #373838;
+}
+
+.products p {
+    flex-grow: 1; 
+}
+
+footer {
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    font-size: 0.60em;
+    font-style: italic;
+    text-align: center;
+}
