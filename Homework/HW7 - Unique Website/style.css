@@ -64,7 +64,7 @@ header {
     max-width: 500px;
     align-items: center;
     height: auto;
-    max-height: 200px; /* Ensures images are consistent */
+    max-height: 200px; 
     object-fit: cover;
 }
 
@@ -84,7 +84,7 @@ h1 {
 }
 
 footer {
-    position:fixed;
+    position:sticky;
     bottom: 0;
     width: 100%;
     padding: 10px;
