@@ -6,7 +6,6 @@ body {
  #board {
     font: 85px arial, sans-serif;
     margin: 3px;
-   /* TODO: Add your solutions here */    
  }
  
  #board > div {

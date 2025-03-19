@@ -2,31 +2,31 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-        <title>My Portfolio</title>
+        <title> My Portfolio</title>
         <link rel="stylesheet" href="style.css">
     </head>
 
+
     <body>
-        <div id="wrapper"> <!-- Start of wrapper div -->
+        <nav id="desktop-nav">
+            <div class="logo">Elizabeth Okunbor</div>
+            <div>
+              <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+        </nav>
 
-            <header>
-                <h1>Elizabeth Okunbor</h1> 
-            </header> 
-
-            <nav>
-                <a href="index.html">Home</a> &nbsp;
-                <a href="about.html">About Me</a> &nbsp;
-                <a href="projects.html">Projects</a> &nbsp;
-                <a href="contact.html">Contact</a>
-            </nav> 
-
-            <main>
+            <section id="about">
                 <h2>About Me</h2>
-                <p>I'm a sophomore in college studying computer science <br>
+                <p class="section__text__p3">I'm a sophomore in college studying computer science <br>
                     who wants to become a software developer or a UX/UI designer.</p>
                 
-                <!-- Flex container for the image and table -->
                 <div class="content-container">
                     <img src="lizandgame.jpg" alt="an image of Elizabeth at a football game" width="300"> <!-- New content to sort and display my hobbies, skills, and interests -->
                     
@@ -53,14 +53,20 @@
                         </tr>
                     </table>
                 </div>
-            </main>
+            </section>
 
             <footer>
-                <p>&copy; 2025 Elizabeth Okunbor. All Rights resevered<br>
-                    <a href="mailto:elizabethokunbor04@gmail.com">elizabethokunbor04@gmail.com</a>
-                </p>
+                <nav>
+                    <div class="nav-links-container">
+                      <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                      </ul>
+                    </div>
+                  </nav>
+                  <p>Copyright &#169; 2023 Elizabeth Okunbor. All Rights Reserved.</p>
             </footer>
-
-        </div> <!-- End of wrapper div -->
     </body>
 </html>
