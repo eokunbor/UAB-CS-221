@@ -78,7 +78,6 @@ gallery-item:nth-child(1) {
     background-image: url('radiation\ cutie.jpg');
 }
 
-/* Use nth-child to style alternate grid items */
 .gallery-item:nth-child(odd) {
     border-style: solid;
 }
@@ -94,11 +93,11 @@ gallery-item:nth-child(1) {
 
 .gallery-item:nth-child(1) {
     background-image: url('pexels-cottonbro-4114710.jpg');
-    background-color: #b6b6b6; /* Light coral color as fallback */
+    background-color: #b6b6b6; 
 }
 
-.gallery-item:nth-child(5) { /* assuming the 4th image is cut off */
-    background-position: bottom center; /* or whatever position shows the important part */
+.gallery-item:nth-child(5) { 
+    background-position: bottom center; 
 }
 
 .gallery-item::before {
