@@ -25,6 +25,10 @@ main img {
     gap: 20px;
 }
 
+/*I used ai to help me with formatting media queries, the nth child selectors, and pseudocode for the gallery items.*/
+/*Prompt: How do I use media queries with a grid? How i use nth child selectors to style grid items? How do i use before and after in CSS?*/
+
+
 @media (min-width: 992px) {
     .gallery {
         grid-template-columns: repeat(3, 1fr);

@@ -1,3 +1,8 @@
+/*I needed hep with my CSS for a responsive portfolio website. So I really depended on this youtube video to help me out: https://www.youtube.com/watch?v=ldwlOzRvYOU&pp=ygUccmVzcG9uc2l2ZSBwb3J0Zm9saW8gd2Vic2l0ZQ%3D%3D */
+/*Most of the question I asked AI was to dedug and correct my CSS code as I was referencing only bits of code from the video above but not everything.*/
+/*Prompt- Please fix any mistakes in my CSS code for a responsive portfolio website*/
+
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 * {
