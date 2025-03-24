@@ -1,0 +1,26 @@
+@media screen and (max-width: 1200px) {
+    .section__pic-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    #profile {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section__pic-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.mobile-effect {
+    display: block;  /* Visible by default (on larger screens) */
+  }
+  
+  @media (max-width: 600px) {
+    .mobile-effect {
+      display: none;  /* Hidden on mobile screens (less than 600px) */
+    }
+  }
+  
