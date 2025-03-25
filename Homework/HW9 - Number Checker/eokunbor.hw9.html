@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+<!--I watch a html video about how to set up meta tags, so I've started adding this to every project I do from now on.-->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
         <title> Number Checker</title>
         <link rel="stylesheet" href="style.css">
+<!--I made the evenOdd function to check if a number, and only a number is even or odd.-->
+<!--To do this, the user will input a number, if the number is divisble by 2 then it's even, if not then it's odd.
+If the user inputs anything other than a number, the console will log "Invalid input. Please enter a number."-->
         <script>
             function evenOdd(){
                 let Input = prompt("Enter a number: ");
@@ -24,10 +28,12 @@
     </head>
 <!--End of Head Section-->
     <body>
+
+<!--I made a div class called alert to alert the user immediately as they enter the page that the answer to if their number is even or odd is in the console. :)-->
         <div class = "alert"> 
             <h1>Even or Odd Checker</h1>
-            <p class="alertmessage">This project is for checking if a number, and<b>only a number</b>, is even or odd.<br>
-            Go to the <b>console</b> to check it out!</p>
+            <p class="alertmessage">This project is for checking if a number,<b>and only a number,</b>is even or odd.<br>
+            Go to the<b>Developer Tools Console</b>to check see your answer!</p>
         </div>
     </body>
 <!--End of Body Section-->

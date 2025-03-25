@@ -1,8 +1,10 @@
+/*Sets entire page to have a 10 px margin and a 0px padding*/
 *{
     margin: 10px;
     padding: 0px;
 }
 
+/*This is styling for alert div*/
 .alert{
     color:rgb(106, 102, 70);
     text-align: center;
@@ -10,6 +12,7 @@
     padding: 30px
 }
 
+/*This is styling for the body*/
 body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color:beige
