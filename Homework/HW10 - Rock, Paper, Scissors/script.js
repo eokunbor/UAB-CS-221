@@ -50,7 +50,7 @@ function rpsGame() {
     else {
       console.log("That's not a valid choice. Please enter Rock, Paper, or Scissors.");
     }
-    
+
 // Ask the user if they want to play/try again
     let playAgain = confirm("Do you want to try again?");
     if (playAgain) {
@@ -60,5 +60,5 @@ function rpsGame() {
     }
   }
 
-// This starts the game by calling the function
+// This starts the game by calling the function :)
 rpsGame();
