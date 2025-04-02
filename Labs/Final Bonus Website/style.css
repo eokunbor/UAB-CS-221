@@ -1,0 +1,50 @@
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image:url('assets/pexels-apgpotr-683039.jpg');/* Default background */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #221811;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+main{
+    color: #ffffff;
+}
+
+h1 {
+    color: #ffffff;
+    line-height: 200%;
+}
+
+h2 {
+    color: #ffffff;
+}
+
+p{
+    color: #ffffff;
+}
+
+nav {
+    margin: 0;
+    padding 0;
+    background-color: black;
+    display: flex;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #D2B48C;
+    font-size: 0.60em;
+    font-style: italic;
+    text-align: center;
+}
+
+
