@@ -22,6 +22,7 @@ body {
     background-color: #ff7272;
 } 
 
+
 #paper{
     background-color: #72adff;
 } 
@@ -41,4 +42,13 @@ button {
     padding: 10px;
     border-radius: 5px;
     text-align: left;
+}
+
+/*I asked Chatgpt to help with resizing and responsiveness on smaller screens*/
+/*prompt: "Can you help me with CSS media queries to make my buttons responsive on smaller screens?"*/
+@media (max-width: 400px) {
+    button {
+        flex: 1 1 80px;
+        font-size: 14px;
+    }
 }

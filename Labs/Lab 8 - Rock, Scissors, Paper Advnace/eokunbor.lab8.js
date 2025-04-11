@@ -32,9 +32,7 @@ function playGame(playerChoice) {
     if (playerChoice === computerChoice) {
         result = "It's a tie!";
     } else if (
-        (playerChoice === 'rock' && computerChoice === 'scissors') ||
-        (playerChoice === 'paper' && computerChoice === 'rock') ||
-        (playerChoice === 'scissors' && computerChoice === 'paper')
+        (playerChoice === 'rock' && computerChoice === 'scissors') || (playerChoice === 'paper' && computerChoice === 'rock') || (playerChoice === 'scissors' && computerChoice === 'paper')
     ) {
         result = "You win!";
     } else {
