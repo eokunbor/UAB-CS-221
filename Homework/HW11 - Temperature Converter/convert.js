@@ -34,7 +34,7 @@ function domLoaded() {
             weatherImage.src = "images/cold.png";
          } else if (finalFahrenheit <= 50) {
             weatherImage.src = "images/cool.png";
-         } else if (finalFahrenheit < 50) {
+         } else if (finalFahrenheit > 50) {
             weatherImage.src = "images/warm.png";
          } 
       }
