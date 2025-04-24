@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Book Finder</h1>
+        <p>Find all your favorite Books on Open Library!</p>
+    </div>
+    
+    <div class="container">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Enter book title or author...">
+            <button id="searchButton">Search Books</button>
+        </div>
+        
+        <div class="tabs">
+            <button class="tab-button active" onclick="openTab('searchResults')">Search Results</button>
+        </div>
+        
+        <div id="searchResults" class="tab-content active">
+            <div id="noSearchResults" class="no-books-message">
+                Search for books to see results here!
+            </div>
+            <div id="bookResults" class="book-cards">
+            </div>
+        </div>
+        
+
+    <div id="bookModal" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal()">&times;</button>
+            <div id="modalContent">
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

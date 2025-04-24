@@ -1,0 +1,263 @@
+/*I ask claude and Pinterest to help me with finding design ideas to know what I wanted to design*/
+/*Prompt: give me design ideas for a book manager*/  
+
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #2a8e39;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.header h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+}
+
+.search-box {
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 8px;
+    margin: 0 auto 2rem;
+    max-width: 1200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#searchInput {
+    margin-bottom: 1rem;
+    padding: 15px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+#searchButton {
+    width: 100%;
+    padding: 15px;
+    background-color: #2a8e39;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+#searchButton:hover {
+    background-color: #1a663d;
+}
+
+.tabs {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tab-button {
+    position: relative;
+    padding: 1rem 1.5rem;
+    background: transparent;
+    border: none;
+    color: #757575;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.tab-button.active {
+    color: #2a8e39;
+    font-weight: 500;
+}
+
+.tab-button.active:after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #2a8e39;
+}
+
+.tab-content {
+    display: none;
+    padding: 2rem 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.books-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#noSearchResults {
+    text-align: center;
+    padding: 2rem;
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.book-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 100%;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.book-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+.book-info {
+    padding: 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.book-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.book-author {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.details-button {
+    padding: 8px 16px;
+    background-color: #2a8e39;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+.details-button:hover {
+    background-color: #1a663d;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 600px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border: 1px solid #ddd;
+}
+
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: #333;
+}
+
+.book-details-img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    max-width: 150px;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (min-width: 768px) {
+    .book-card {
+        width: calc(33.333% - 14px);
+    }
+    
+    .modal-content {
+        margin: 10% auto;
+        max-width: 600px;
+        padding: 40px;
+    }
+}
+
+@media (min-width: 992px) {
+    .book-card {
+        width: calc(25% - 15px);
+    }
+}
+
+@media (min-width: 1200px) {
+    .book-card {
+        width: calc(20% - 16px);
+    }
+    
+    .modal-content {
+        max-width: 700px;
+    }
+}
