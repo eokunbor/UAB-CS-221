@@ -1,3 +1,13 @@
+/*I had to look up alot of youtube videos on how to fetch my api and the logic for my JS*/
+/*Videos: 
+https://www.youtube.com/watch?v=WXsD0ZgxjRw&pp=ygUOYXBpIGhvdyB0byB1c2U%3D
+https://www.youtube.com/watch?v=cuEtnrL9-H0&pp=ygUkaG93IHRvIG1ha2UgYSBzZWFyY2ggYmFyIGh0bWwgY3NzIGpz
+https://www.youtube.com/watch?v=37vxWr0WgQk&t=192s&pp=ygUkaG93IHRvIG1ha2UgYSBzZWFyY2ggYmFyIGh0bWwgY3NzIGpz
+https://www.youtube.com/shorts/_1a0v4YUkRs
+https://www.youtube.com/watch?v=NwoAZF66_Go&pp=ygUIZXJyb3IganPSBwkJhAkBhyohjO8%3D
+*/
+
+/*Claude gave me the default book cover*/
 var bookList = [];
 var defaultBookCover = "https://via.placeholder.com/150x220?text=No+Cover";
 
@@ -38,6 +48,7 @@ function showBooks(books) {
   resultsArea.innerHTML = "";
   resultsArea.classList.add("books-container");
   
+  /*Claude help with formatting the detatils and my syntax*/
   books.forEach((book, index) => {
     var bookInfo = {
       title: book.title || "Unknown Title",
