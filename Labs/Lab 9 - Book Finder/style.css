@@ -234,6 +234,7 @@ body {
     clear: both;
 }
 
+/*Claude helped with media queries*/
 @media (min-width: 768px) {
     .book-card {
         width: calc(33.333% - 14px);
